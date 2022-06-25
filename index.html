@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Article preview component</title>
+
+ 
+</head>
+<body>
+
+  <div class="container">
+
+    <main>
+
+      <img src="/images/drawers.jpg" alt="drawer" class="main__image">
+
+      <section class="wrapper">
+
+        <section class="content">
+
+          <h1> Shift the overall look and feel by adding these wonderful 
+          touches to furniture in your home</h1>
+  
+          <p>  Ever been in a room and felt like something was missing? Perhaps 
+            it felt slightly bare and uninviting. I've got some simple tips 
+            to help you make any room feel complete.</p>
+        
+  
+        </section>
+  
+          
+        <div class="content__footer">
+            
+          <div class="footer__icons" id="initial">
+            <img src="/images/avatar-michelle.jpg" alt="" class="footer__avatar">
+            <div class="footer__data">
+              <h2 class="footer__name">Michelle Appleton</h2>
+              <p>28 Jun 2020</p>
+            </div>
+            <div class="footer__share">
+              <img src="/images/icon-share.svg" alt="" class="footer__inactive_arrow">
+            </div>
+          </div>
+  
+          <!-- When share is cliked mobile-->
+  
+          <div class="footer__icons inactive" id="clicked">
+            <h2 class="active__title">SHARE</h2>
+            <img src="/images/icon-facebook.svg" alt="facebook icon" class="icon">
+            <img src="/images/icon-twitter.svg" alt="twitter icon" class="icon">
+            <img src="/images/icon-pinterest.svg" alt="pinterest icon" class="pinterest">
+            <div class="footer__share share__active" id="share-active">
+              <img src="/images/icon-share.svg" alt="" class="arrow__active">
+            </div>
+          </div>
+  
+        </div>
+
+        <div class="desktop-social inactive ">
+          <h1 class="active__title">SHARE</h1>
+          <img class="icon" src="/images/icon-facebook.svg" alt="facebook">
+          <img class="icon" src="/images/icon-twitter.svg" alt="twitter">
+          <img class="icon" src="/images/icon-pinterest.svg" alt="pinterest">
+        </div>
+
+      </section>
+      
+     
+
+    </main>
+
+  </div>
+ 
+
+  <script src="/js/app.js"></script>  
+  
+
+</body>
+</html>

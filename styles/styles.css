@@ -1,0 +1,219 @@
+:root{
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--Light-Grayish-Blue);
+    height: 100vh;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+main{
+    max-width: 430px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/* ===== CONTENT STYLES ===== */
+
+.content, .content__footer{
+    padding: 0 30px;
+}
+
+.main__image{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.content h1{
+    font-size: 1.3rem;
+    color: var(--Very-Dark-Grayish-Blue);
+    line-height: 25px;
+}
+
+.content p{
+    color: var(--Desaturated-Dark-Blue);
+    line-height: 21px;
+    font-size: 14px;
+}
+
+
+/* ===== FOOTER STYLES ===== */
+.content__footer{
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.footer__avatar{
+    border-radius: 50%;
+    width: 45px;
+    margin-right: 1.2rem;
+}
+
+.footer__icons{
+    display: flex;
+    align-items: center;
+}
+
+.footer__data{
+    margin-right: auto;
+}
+
+.footer__data h2, .footer__data p{
+    margin: 0;
+
+}
+
+.footer__data .footer__name{
+    font-size: 14px;
+    margin-bottom: 2px;
+    color: var(--Very-Dark-Grayish-Blue);
+}
+
+.footer__data p{
+    color: var(--Grayish-Blue);
+}
+
+
+.footer__share{
+    background-color: var(--Light-Grayish-Blue);
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.footer__share:hover{
+    cursor: pointer;
+}
+
+
+.inactive{
+    display: none;
+}
+
+
+
+/* ===== ACTIVE STYLES ===== */
+
+/* Apply when the button is clicked */
+.content__footer-active{
+    background-color: var(--Very-Dark-Grayish-Blue);
+    transition: all .1s ease;
+}
+
+.active__title{
+    margin: 0;
+    letter-spacing: 4px;
+    color: var(--Grayish-Blue);
+    font-size: 14px;
+    margin-right: 12px;
+    font-weight: 400;
+}
+
+.icon{
+    margin-right: 16px;
+}
+
+.pinterest{
+    margin-right: auto;
+}
+
+.share__active{
+    background-color: var(--Desaturated-Dark-Blue);
+}
+
+/* I have no idea what I'm doing here to make it "white", but it kinda worked */
+.arrow__active{
+    filter: saturate(1000) sepia(10) hue-rotate(200deg) brightness(10);
+}
+
+.footer__arrow_active{
+    background-color: var(--Very-Dark-Grayish-Blue);
+}
+
+/* ====== MEDIA QUERYS ====== */
+ 
+/* Extra small devices (phones, 1400px and down) */
+@media only screen and (min-width: 1400px) {
+    
+    main{
+        display: flex;
+        max-width: 815px;
+        align-items: center;
+    }
+
+    .main__image{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .content h1{
+        font-size: 20px;
+    }
+
+    .content__footer{
+        justify-self: flex-end;
+    }
+
+    .desktop-social{
+        height: 30px;
+        background-color: var(--Very-Dark-Grayish-Blue);
+        position: absolute;
+        display: flex;
+        align-items: center;
+        padding: 27px 32px;
+        border-radius: 10px;
+        position: absolute;
+        margin-top: 134px;
+        margin-left: 305px;
+        -webkit-box-shadow: 4px 21px 34px -20px rgba(0,0,0,0.75);
+        -moz-box-shadow: 4px 21px 34px -20px rgba(0,0,0,0.75);
+        box-shadow: 4px 21px 34px -20px rgba(0,0,0,0.75);
+    }
+
+    .desktop-social::after{
+        content:'';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 0;
+        height: 0;
+        border-top: solid 12px var(--Very-Dark-Grayish-Blue);
+        border-left: solid 10px transparent;
+        border-right: solid 10px transparent;
+    }
+
+    .inactive{
+        display: none;
+    }
+}   
+
